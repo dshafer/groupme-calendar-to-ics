@@ -1,10 +1,13 @@
 from flask import Flask, current_app, render_template, request
+from werkzeug.middleware.proxy_fix import ProxyFix
 import os
 import datetime
 
 import utils
 
 app = Flask(__name__)
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_host=1, x_prefix=1)
+
 with app.app_context():
     current_app.calendar_timezone = os.environ.get('GROUPME_CALENDAR_TIMEZONE', 'America/Los_Angeles')
     current_app.groupme_calendar_name = 'GroupMe Calendar'
