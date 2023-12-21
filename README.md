@@ -2,7 +2,7 @@
 
 Turn your GroupMe event calendar into an ICS feed (for Google Calendar, Apple Calendar, Outlook, etc.).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/amussey/groupme-calendar-to-ics)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=[https://github.com/DueHack12/groupme-calendar-to-ics/tree/patch-2])
 
 ## Deploying
 
